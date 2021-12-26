@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Basic Template 1</title>
+  </head>
+  <style media="screen">
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+    body
+    {
+      font-family: 'Montserrat', sans-serif;
+      background-color: white;
+    }
+    .heading1
+    {
+      box-sizing: border-box;
+      width: 500px;
+      height: 600px;
+      color: white;
+      background: black;
+      margin-left: 390px;
+      border-radius: 20px;
+      margin-top: 60px;
+      overflow: hidden;/*The heading should not overflow*/
+      /*box-shadow: 10px 10px rgba(0,0,0,0.6);*/
+      position: static;
+    }
+    .heading1 input[type="text"]
+    {
+      margin-bottom: 20px;
+      margin-left: 100px;
+
+      outline: none;
+      border: none;
+      border-bottom: 1px solid grey;
+      background: transparent;
+      color: white;
+      width: 300px;
+    }
+    .heading1 label{
+      margin-left: 100px;
+      margin-bottom: 20px;
+      font-family: 'Montserrat', sans-serif;
+    }
+    /*fixing the signup tab*/
+    .signup_label
+    {
+      height: 50px;
+      font-family: 'Montserrat', sans-serif;
+      background-color: grey;
+      width: 100%;
+      padding-top: 30px;
+      padding-bottom: 39px;
+      text-align: center;
+      font-size: 30px;
+      line-height: 0.97;
+      margin-bottom: 40px;/*important for gap bwtn first entry and signup*/
+      /*display: block;*/
+    }
+    .dot,.dot1
+    {
+        margin-top: 10px;
+    }
+    .heading1 input[type="text"]:focus
+    {
+      outline: none;
+      color: white;
+    }
+    .heading1 input[type="submit"]
+    {
+      border-radius: 20px;
+      font-size: 30px;
+      border: none;
+      outline: none;
+      margin-left: 100px;
+      width: 300px;
+      margin-top: 10px;
+      margin-top: 50px;
+    }
+    .dot3
+    {
+      margin-top: 40px;
+    }
+    .dot3 p{
+      font-size: 15px;
+      color: white;
+      margin-left: 160px;
+    }
+    .dot3 a{
+      line-height: 1.5;
+      font-size: 15px;
+      margin-left: 185px;
+    }
+    .dot4{
+      float: right;
+      margin-top: 20px;
+      margin-right: 20px;
+    }
+
+  </style>
+  <body>
+    <div class="heading1">
+      <form class="form1">
+        <div class="signup_label"><p>Sign In</p></div>
+          <label for="name">Username</label><br>
+          <div class="dot">
+            <input type="text" name="un"><br>
+          </div>
+          <label for="pwd">Password</label><br>
+          <div class="dot1">
+            <input type="text" name="pwd" maxlength="5"><br>
+          </div>
+        <a class="dot4" href="#" style="color:grey;text-decoration:none;">Forgot Password?</a>
+        <input type="submit">
+        <div class="dot3">
+          <p>Don't Have an account?</p>
+          <a href="#" style="color:grey;text-decoration:none;">SIGN UP NOW</a>
+        </div>
+      </form>
+    </div>
+
+  </body>
+</html>
